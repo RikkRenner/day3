@@ -1,48 +1,57 @@
-// Console log
-console.log("Hello World!");
+// Iteration
 
-//Different kinds of console logging
-const msg = 'this is a message ';
+// FOR loops
+// create a for loop...
+// declaring a variable;
+// starting a condition
+// declaring a 'step'
 
-//General log
-console.log(msg);
+console.log("FOR loop")
+for(let i = 0; i < 10; i++) {
+    console.log(`i = ${i}`);
+}
 
-//Info Message
-console.info(msg);
+// WHILE loops
+// work with booleans
+// run until a condition is no longer here
+let condition = true;
+let increment = 0;
 
-//Warning message
-console.warn(msg);
+while(condition) {
+    if(increment == 10){
+        condition = false;
+        break;
+    }
 
-//Error message
-console.error(msg);
+    console.log(`increment = ${increment}`)
+    increment++
+}
 
-//Make console log look unique with HTML/CSS
-console.log(`%c` + msg, `color: black; background-color: white; font-size 20px; padding: 5px;`);
+// DO-WHILE loop
+// The same as a while loop but runs at least ONCE
+let a = false;
+do {
+    console.log(`This loop is running`)
+} while (a);
 
-console.log(`%c` + msg + `%c` + msg, `color:red;`, `color:green;`);
+//SWITCH cases
 
-const msgExercise = 'This is a message for the exercises! '
+let num =1; 
 
-//Exercise 1
-console.log(`Exercise 1`);
-console.log(`First Name: Richard`);
-console.log(`Second Name: Renshaw`);
-console.log(`From: Manchester`);
-console.log(`StarSign: Aries`);
-
-//Exercise 2
-console.log(`Exercise 2`);
-console.log(`%c` + msgExercise, `color: orange; font-weight: bold; font-family: fantasy; background-color: black; padding: 10px;`);
-
-
-
-
-
-
-
-
-
-
-
-
+switch(num) {
+    case 0: 
+        console.log(`the number is equal to 0`)
+        break;
+    case 1: 
+        console.log(`the number is 1`)
+        break;
+    case 4: 
+        console.log(`the number is 4`)
+        break;
+    case 10: 
+        console.log(`reached 10`)
+        break;
+    default:
+        console.warn(`not sure what you are doing here?`);
+}
 

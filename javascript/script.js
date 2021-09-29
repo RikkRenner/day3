@@ -80,6 +80,6 @@ myArray.shift();
 
 console.log(`length of array is ${myArray.length}`)
 
-for(let greeting in myArray) {
-    console.log(myArray[greeting]);
+for(let greeting of myArray) {
+    console.log(greeting);
 }

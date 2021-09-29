@@ -1,48 +1,58 @@
-// Console log
-console.log("Hello World!");
+// let standard = `variable`;
 
-//Different kinds of console logging
-const msg = 'this is a message ';
+// const constant = `variable`;
 
-//General log
-console.log(msg);
+// let thisIsMyNewVariable = 1;
+// let $myVariable = 2;
+// let _newVar =3; 
 
-//Info Message
-console.info(msg);
+// //Data Type
 
-//Warning message
-console.warn(msg);
+// let aBoolean =  true;
+// let aNumber = 4;
+// let aString =`this is a string`;
+// let aBigInt = 9999999999999999n;
+// let aBrokenBigInt = 999999999999999999999999;  
 
-//Error message
-console.error(msg);
+// console.log(aBigInt);
+// console.log(aBrokenBigInt);
 
-//Make console log look unique with HTML/CSS
-console.log(`%c` + msg, `color: black; background-color: white; font-size 20px; padding: 5px;`);
+// let aSymbol = Symbol("decription of symbol")
+// let aNull = null; 
+// let anUndefined; 
 
-console.log(`%c` + msg + `%c` + msg, `color:red;`, `color:green;`);
+// console.log(anUndefined
+//             + "\r\n" + typeof(undefined)
+// );
 
-const msgExercise = 'This is a message for the exercises! '
+// let myObject; 
 
-//Exercise 1
-console.log(`Exercise 1`);
-console.log(`First Name: Richard`);
-console.log(`Second Name: Renshaw`);
-console.log(`From: Manchester`);
-console.log(`StarSign: Aries`);
+// console.log(myObject);
 
-//Exercise 2
-console.log(`Exercise 2`);
-console.log(`%c` + msgExercise, `color: orange; font-weight: bold; font-family: fantasy; background-color: black; padding: 10px;`);
+// myObject = {
+//     key: `value`,
+//     age: 29, 
+//     height: 6.3, 
+//     name: `Rikk`
+// };
 
+// console.log(myObject);
 
+// //concatination
+// let string1 = `2 + 2 = `
+// let string2 = 2+2; 
+// console.log(string1 + string2)
 
+// //interpolation
+// //console.log(`2 + 2 = ${2+2}`);
 
+let totalMoney = 4000;
+let moneyPaidSoFar = 2348;
+let totalLeftToPay = totalMoney - moneyPaidSoFar;
 
+// Use interpolation for operations in string
+console.log(`The total bill is £4000 the remaining amount of money to be paid is £${totalMoney - moneyPaidSoFar}`);
 
-
-
-
-
-
-
+//Use variable and referance using interpolation
+console.log(`The total bill is £4000 the remaining amount of money to be paid is £${totalLeftToPay}`);
 

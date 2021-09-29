@@ -1,48 +1,59 @@
-// Console log
-console.log("Hello World!");
+// // Conditionals 
 
-//Different kinds of console logging
-const msg = 'this is a message ';
+// // FALSEY
 
-//General log
-console.log(msg);
+// let falseOne = 0;
+// let falseTwo = '';
+// let falseThree;
+// let falseFour = null;
+// let falseFive = NaN;
+// let falseSix = false; 
 
-//Info Message
-console.info(msg);
+// // everything else is TRUTHY
 
-//Warning message
-console.warn(msg);
+// // IF statements (also ELSE IF & ELSE)
+// let a = 0; 
 
-//Error message
-console.error(msg);
+// if(a == 0){
+//     console.log(`success`);
+// } else if(a != 2) {
+//     console.log(`not 2`)
+// } else {
+//     console.log(`failure`)
+// }
 
-//Make console log look unique with HTML/CSS
-console.log(`%c` + msg, `color: black; background-color: white; font-size 20px; padding: 5px;`);
+// // Ternary IF 
+// let b = 1
 
-console.log(`%c` + msg + `%c` + msg, `color:red;`, `color:green;`);
+// if(b == true)
 
-const msgExercise = 'This is a message for the exercises! '
+// if (b == true) {
+//     console.log(`b is true`);
+// } else {
+//     console.log(`b is false`);
+// }
 
-//Exercise 1
-console.log(`Exercise 1`);
-console.log(`First Name: Richard`);
-console.log(`Second Name: Renshaw`);
-console.log(`From: Manchester`);
-console.log(`StarSign: Aries`);
+// // EQUALITY & TYPE == duck type === object equality
+// b === `1` ? console.log(`yes`) : console.log('no')
 
-//Exercise 2
-console.log(`Exercise 2`);
-console.log(`%c` + msgExercise, `color: orange; font-weight: bold; font-family: fantasy; background-color: black; padding: 10px;`);
+// 1. Create a IF statement that satifies the following:
+// * Declare a variable age
+// * Write a condition that checks if age is between 18 AND 65
+// * Return a value in each case where the condition is satisfied and not satisfied.
+// * Extra: Consider the case where age is less than 18 - return 'underage'.
 
+let age = 20;
+let result = " "
+if(age < 18) {
+    result = "person is underage."
+}
+else if(age >= 18 || age <= 65) {
+    result = "person is between 18 and 65."
+} else {
+    result = "person is an old git"
+}
 
+console.log(result);
 
-
-
-
-
-
-
-
-
-
-
+// 2. Using ternary-if syntax, write code that checks if age is above 50.
+age > 50 ? console.log("person is over 50") : console.log("person is 50 or under");
